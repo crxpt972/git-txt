@@ -2,295 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burger</title>
-    <link rel="shortcut icon" type="image" href="./icon/logo.png">
-    <link rel="stylesheet" href="style.css">
-    <!-- bootstrap link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-    <!-- bootstrap link -->
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-
-    <!-- font -->
+    <script src="https://kit.fontawesome.com/635f269a8b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio</title>
 </head>
-<body>
-    <div id="cantainer-background">
-        <nav class="navbar navbar-expand-md" id="navbar-color">
-            <!-- Brand -->
-            <a class="navbar-brand" href="#" id="logo-color"><i><img src="./icon/logo.png" alt=""></i>Burger</a>
-          
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span><i><img src="./icon/menu.png" alt="" id="menu-color"></i></span>
-            </button>
-          
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#" id="first">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Burger</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Chicken Burger</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
-                </li>
-              </ul>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-indigo-900 text-white p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold cursor-pointer">Saliou<span class="text-yellow-500"> Diao</span></h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="#Home" class="hover:text-yellow-500 transition">Home</a></li>
+                <li><a href="#Skills" class="hover:text-yellow-500 transition">Skills</a></li>
+                <li><a href="#Projects" class="hover:text-yellow-500 transition">Projects</a></li>
+                <li><a href="#Contact" class="hover:text-yellow-500 transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="Home" class="h-screen bg-cover bg-center text-white" style="background-image: url(https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8YWxsfDIwfHx8fHx8fHwxNjg4NzAwMDQ&ixlib=rb-1.2.1&q=80&w=1080);">
+            <div class="h-full flex flex-col justify-center items-center bg-indigo-900 bg-opacity-60">
+                <h2 class="text-5xl md:text-6xl font-bold">Hello, I'm Saliou Diao</h2>
+                <p class="text-xl md:text-xl p-8">I'm a passionate web developer specializing in creating modern, responsive websites. Let's bring your ideas to life on the web.</p>
             </div>
-          </nav>
-          <div class="main-content">
-              <div class="content">
-                  <h1>BEST DEAL</h1>
-                  <h2>BURGER</h2>
-                  <div id="btn1"><button>Order Now</button></div>
-              </div>
-          </div>
-          
-    </div>
+        </section>
 
-
-
-
-    <div class="container">
-        <div class="best-card">
-            <div class="row" style="margin-top: 100px ;">
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <img class="card-image-top" src="./images/card1.png" alt="">
-                        <div class="card-img-overlay">
-                            <h1 class="card-titel">Fresh Fries</h1>
-                            <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
+        <!-- Skills Section -->
+        <section id="Skills" class="p-8">
+            <h2 class="text-4xl mb-8 text-center font-bold text-gray-800">My Skills</h2>
+            <div class="flex flex-wrap justify-center space-x-4 space-y-4">
+                <div class="bg-yellow-500 p-6 shadow-lg rounded-md flex items-center space-x-3">
+                    <i class="fab fa-js text-white text-3xl"></i>
+                    <span class="text-white">JavaScript</span>
                 </div>
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <img class="card-image-top" src="./images/card2.jpg" alt="">
-                        <div class="card-img-overlay">
-                            <h1 class="card-titel">Fresh Burger</h1>
-                            <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
+                <div class="bg-purple-600 p-6 shadow-lg rounded-md flex items-center space-x-3">
+                    <i class="fab fa-css3-alt text-white text-3xl"></i>
+                    <span class="text-white">Tailwind CSS</span>
                 </div>
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <img class="card-image-top" src="./images/card3.png" alt="" height="230px">
-                        <div class="card-img-overlay">
-                            <h1 class="card-titel">Fast Delivery</h1>
-                            <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
+                <div class="bg-red-500 p-6 shadow-lg rounded-md flex items-center space-x-3">
+                    <i class="fab fa-html5 text-white text-3xl"></i>
+                    <span class="text-white">HTML5</span>
+                </div>
+                <div class="bg-blue-600 p-6 shadow-lg rounded-md flex items-center space-x-3">
+                    <i class="fab fa-css3-alt text-white text-3xl"></i>
+                    <span class="text-white">CSS3</span>
+                </div>
+                <div class="bg-green-700 p-6 shadow-lg rounded-md flex items-center space-x-3">
+                    <i class="fab fa-react text-white text-3xl"></i>
+                    <span class="text-white">React</span>
+                </div>
+                <div class="bg-teal-500 p-6 shadow-lg rounded-md flex items-center space-x-3">
+                    <i class="fab fa-node text-white text-3xl"></i>
+                    <span class="text-white">Node.js</span>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-
-
-
-<!-- new card -->
-
-    <div class="container">
-        <div class="card-content">
-            <div class="row">
-                <div class="col-md-6 py-3 py-md-0">
-                    <h1>SUPER DEAL</h1>
-                    <h1>BURGER</h1>
-                    <h3>50% OFF</h3>
-                    <h5>$100,50</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat consequuntur rem aliquam quam ipsam? Deserunt vitae repellat laboriosam, temporibus consectetur fugiat numquam aliquam impedit nostrum ipsum ea nihil cumque accusamus aliquid. Ad iure cumque nam veritatis et sit praesentium voluptas, animi ex omnis dolor ratione assumenda ipsum deleniti doloremque, corporis velit ipsam quam? Obcaecati, perspiciatis unde mollitia iste reprehenderit praesentium odio esse facilis ducimus dignissimos provident eaque maiores vitae maxime repudiandae consectetur, ex, harum beatae error eos repellat? Quas, quod? Ut, nesciunt velit in perferendis sunt architecto, eum natus dolor pariatur, illum magni aperiam ipsum. Aliquid, corporis voluptates. Enim error quo, dolorem ducimus consequuntur autem nam voluptate ipsam. Error iste ullam ipsa eius, dolores obcaecati esse temporibus eveniet iure nam minus modi quod asperiores earum vitae. Quia quaerat libero, sed, iure quae dignissimos iste saepe commodi necessitatibus harum alias voluptatum?</p>
-
-                </div>
-                <div class="col-md-6 py-3 py-md-0">
-                    <div class="card">
-                        <img class="card-image-top" src="./images/side-background.png" alt="">
-                    </div>
-    
-                </div>
-            </div>
-            
-        </div>
-    </div>
-
-
-
-
-
-    <div class="container">
-        <div class="banner">
-            <h1>Best <span class="change-content"></span></h1>
-            <h2>50% OFF</h2>
-            <div id="btn2"><button>Order Now</button></div>
-        </div>
-    </div>
-
-
-    <div class="container">
-        <div class="new-card">
-            <div class="row">
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <img class="card-image-top" src="./images/cheese burger.jpg" alt="">
-                        <div class="card-body">
-                            <h2 class="card-titel text-center">Chesse Burger</h2>
-                            <h3 class="card-titel text-center">$30,20</h3>
-                            <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, error?</p>
-                            <div id="btn3"><button>Order Now</button></div>
-                        </div>
+        <!-- Projects Section -->
+        <section id="Projects" class="p-8 bg-gray-100">
+            <h2 class="text-4xl mb-8 text-center font-bold text-gray-800">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-semibold mb-4">Project 1</h3>
+                        <p class="text-gray-500">Coming Soon</p>
                     </div>
                 </div>
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <img class="card-image-top" src="./images/chicken burger.png" alt="">
-                        <div class="card-body">
-                            <h2 class="card-titel text-center">Chicken Burger</h2>
-                            <h3 class="card-titel text-center">$50,60</h3>
-                            <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, error?</p>
-                            <div id="btn3"><button>Order Now</button></div>
-                        </div>
+                <!-- Project Card 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-semibold mb-4">Project 2</h3>
+                        <p class="text-gray-500">Coming Soon</p>
                     </div>
                 </div>
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <img class="card-image-top" src="./images/beef burger.png" alt="">
-                        <div class="card-body">
-                            <h2 class="card-titel text-center">Chesse Burger</h2>
-                            <h3 class="card-titel text-center">$35,50</h3>
-                            <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, error?</p>
-                            <div id="btn3"><button>Order Now</button></div>
-                        </div>
+                <!-- Project Card 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-semibold mb-4">Project 3</h3>
+                        <p class="text-gray-500">Coming Soon</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="row" style="margin-top: 50px;">
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <img class="card-image-top" src="./images/sandwich.png" alt="">
-                        <div class="card-body">
-                            <h2 class="card-titel text-center">Best Sandwich</h2>
-                            <h3 class="card-titel text-center">$70,30</h3>
-                            <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, error?</p>
-                            <div id="btn3"><button>Order Now</button></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <img class="card-image-top" src="./images/beef burger2.png" alt="">
-                        <div class="card-body">
-                            <h2 class="card-titel text-center">Beef Burger</h2>
-                            <h3 class="card-titel text-center">$100,50</h3>
-                            <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, error?</p>
-                            <div id="btn3"><button>Order Now</button></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <img class="card-image-top" src="./images/fries.png" alt="">
-                        <div class="card-body">
-                            <h2 class="card-titel text-center">Best Fries</h2>
-                            <h3 class="card-titel text-center">$50,10</h3>
-                            <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, error?</p>
-                            <div id="btn3"><button>Order Now</button></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="btn4"><button>View Full Menu</button></div>
-    </div>
+        <!-- Contact Section -->
+        <section id="Contact" class="p-8">
+            <h2 class="text-4xl mb-6 text-center font-bold text-gray-800">Contact Me</h2>
+            <p class="text-center">You can reach me at <a href="mailto:saliou.diao@example.com" class="text-indigo-600">saliou.diao@example.com</a></p>
+        </section>
+    </main>
 
-
-
-
-
-<div class="banner2">
-    <h1>Fast & Free</h1>
-    <h2>DELIVERY</h2>
-</div>
-
-<div class="container">
-    <h1 class="text-center" style="font-weight: bold; margin-top:50px">About Us</h1>
-    <div class="about-us">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="card">
-                    <img class="card-image-top" src="./images/about us.png" style="height:350px">
-                </div>
-            </div>
-            <div class="col-md-7">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic alias in nemo odio, velit quam quaerat eius. Ratione blanditiis animi adipisci laborum modi laboriosam debitis eos delectus rem natus, eveniet beatae quae voluptate repellat exercitationem error deleniti, neque quas numquam necessitatibus accusantium est perferendis? Sunt possimus quidem voluptate, beatae necessitatibus unde aliquam perferendis. Odio quidem sequi, ut esse ipsa rerum quis enim debitis hic, tempora tenetur. Labore fugiat commodi quae unde assumenda molestias quaerat, sed asperiores culpa atque nesciunt fuga voluptatem eos nemo quos rerum neque incidunt aliquid, odio nulla. Perferendis earum necessitatibus asperiores at aliquam voluptas itaque tempore, excepturi atque consectetur. Ad, atque. Impedit deleniti, vel dolorem eos earum saepe placeat nulla ullam praesentium vitae, dolores quo dolor repudiandae facere, sapiente possimus consectetur accusantium reprehenderit. Reprehenderit mollitia molestias iusto laborum nemo odit voluptate quidem consequuntur magni quaerat quas atque quae adipisci ratione tempore, ducimus labore accusamus. Iste, in ea!</p>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<h1 class="text-center" style="font-weight:bold ; margin-top: 50px;">Contact Us</h1>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group">
-                <input type="text" class="form-control" id="usr" placeholder="Name">
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="eml" placeholder="Email">
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="phn" placeholder="Phone">
-            </div>
-            <div id="btn1"><button>Send Message</button></div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <textarea class="form-control" id="comment"  rows="5"></textarea>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-<footer id="footer">
-    <div class="container">
-        <div class="row d-flex align-items-center">
-            <div class="col-lg-6 text-lg-left text-center">
-                <div class="copyright">
-                    &copy; Copyright <strong>Burger</strong>. All Rights Reserved
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-                    <a href="#" class="scrollto">Home</a>
-                    <a href="#" class="scrollto">Burger</a>
-                    <a href="#" class="scrollto">Chicken Burger</a>
-                    <a href="#" class="scrollto">About Us</a>
-                    <a href="#" class="scrollto">Contact Us</a>
-                </nav>
-            </div>
-        </div>
-    </div>
-</footer>
-    
+    <footer class="bg-indigo-900 text-white text-center p-4">
+        <p>&copy; 2024 Saliou Diao. All rights reserved.</p>
+    </footer>
 </body>
 </html>
