@@ -3,105 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/635f269a8b.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Portfolio</title>
+    <title>Sentence Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-50">
-    <!-- Header -->
-    <header class="bg-indigo-900 text-white p-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold cursor-pointer">Saliou<span class="text-yellow-500"> Diao</span></h1>
-        <nav>
-            <ul class="flex space-x-4">
-                <li><a href="#Home" class="hover:text-yellow-500 transition">Home</a></li>
-                <li><a href="#Skills" class="hover:text-yellow-500 transition">Skills</a></li>
-                <li><a href="#Projects" class="hover:text-yellow-500 transition">Projects</a></li>
-                <li><a href="#Contact" class="hover:text-yellow-500 transition">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section id="Home" class="h-screen bg-cover bg-center text-white" style="background-image: url(https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8YWxsfDIwfHx8fHx8fHwxNjg4NzAwMDQ&ixlib=rb-1.2.1&q=80&w=1080);">
-            <div class="h-full flex flex-col justify-center items-center bg-indigo-900 bg-opacity-60">
-                <h2 class="text-5xl md:text-6xl font-bold">Hello, I'm Saliou Diao</h2>
-                <p class="text-xl md:text-xl p-8">I'm a passionate web developer specializing in creating modern, responsive websites. Let's bring your ideas to life on the web.</p>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="Skills" class="p-8">
-            <h2 class="text-4xl mb-8 text-center font-bold text-gray-800">My Skills</h2>
-            <div class="flex flex-wrap justify-center space-x-4 space-y-4">
-                <div class="bg-yellow-500 p-6 shadow-lg rounded-md flex items-center space-x-3">
-                    <i class="fab fa-js text-white text-3xl"></i>
-                    <span class="text-white">JavaScript</span>
-                </div>
-                <div class="bg-purple-600 p-6 shadow-lg rounded-md flex items-center space-x-3">
-                    <i class="fab fa-css3-alt text-white text-3xl"></i>
-                    <span class="text-white">Tailwind CSS</span>
-                </div>
-                <div class="bg-red-500 p-6 shadow-lg rounded-md flex items-center space-x-3">
-                    <i class="fab fa-html5 text-white text-3xl"></i>
-                    <span class="text-white">HTML5</span>
-                </div>
-                <div class="bg-blue-600 p-6 shadow-lg rounded-md flex items-center space-x-3">
-                    <i class="fab fa-css3-alt text-white text-3xl"></i>
-                    <span class="text-white">CSS3</span>
-                </div>
-                <div class="bg-green-700 p-6 shadow-lg rounded-md flex items-center space-x-3">
-                    <i class="fab fa-react text-white text-3xl"></i>
-                    <span class="text-white">React</span>
-                </div>
-                <div class="bg-teal-500 p-6 shadow-lg rounded-md flex items-center space-x-3">
-                    <i class="fab fa-node text-white text-3xl"></i>
-                    <span class="text-white">Node.js</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="Projects" class="p-8 bg-gray-100">
-            <h2 class="text-4xl mb-8 text-center font-bold text-gray-800">My Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project Card 1 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/300x200" alt="Project 1" class="w-full h-48 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="text-2xl font-semibold mb-4">Project 1</h3>
-                        <p class="text-gray-500">Coming Soon</p>
-                    </div>
-                </div>
-                <!-- Project Card 2 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/300x200" alt="Project 2" class="w-full h-48 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="text-2xl font-semibold mb-4">Project 2</h3>
-                        <p class="text-gray-500">Coming Soon</p>
-                    </div>
-                </div>
-                <!-- Project Card 3 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/300x200" alt="Project 3" class="w-full h-48 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="text-2xl font-semibold mb-4">Project 3</h3>
-                        <p class="text-gray-500">Coming Soon</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="Contact" class="p-8">
-            <h2 class="text-4xl mb-6 text-center font-bold text-gray-800">Contact Me</h2>
-            <p class="text-center">You can reach me at <a href="mailto:saliou.diao@example.com" class="text-indigo-600">saliou.diao@example.com</a></p>
-        </section>
-    </main>
-
-    <footer class="bg-indigo-900 text-white text-center p-4">
-        <p>&copy; 2024 Saliou Diao. All rights reserved.</p>
-    </footer>
+<body>
+    <div class="container">
+        <h1>Sentence Analyzer</h1>
+        <form id="sentenceForm">
+            <label for="sentence">Enter a sentence ending with a period:</label><br>
+            <input type="text" id="sentence" name="sentence" required>
+            <button type="submit">Analyze</button>
+        </form>
+        <div class="results">
+            <p id="lengthResult">Sentence length (number of characters): 0</p>
+            <p id="wordResult">Number of words: 0</p>
+            <p id="vowelResult">Number of vowels: 0</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
