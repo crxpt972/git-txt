@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Shopping Cart Example</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="product" id="product-1">
+                <h3>Product 1</h3>
+                <img src="image/casquette.png" width="120px" alt="">
+                <p>$100</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="like"><span class="heart">&#9829;</span></button>
+            </div>
+            <div class="product" id="product-2">
+                <h3>Product 2</h3>
+                <img src="image/Jeans-PNG-Image.webp" width="120px" alt="">
+                <p>$150</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="like"><span class="heart">&#9829;</span></button>
+            </div>
+            <div class="product" id="product-3">
+                <h3>Product 3</h3>
+                <img src="image/tshirt.png" width="120px" alt="">
+                <p>$200</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="like"><span class="heart">&#9829;</span></button>
+            </div>
+        </div>
+    </main>
+
+    <aside class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p class="total">Total: $<span id="total-price">0</span></p>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
