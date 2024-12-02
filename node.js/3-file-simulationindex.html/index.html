@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Simulation</title>
+</head>
+<body>
+  <button onclick="createFile()">Créer un fichier</button>
+  <button onclick="readFile()">Lire le fichier</button>
+  <p id="content"></p>
+  <script>
+    function createFile() {
+      localStorage.setItem('welcome.txt', 'Hello Node');
+      alert('Fichier créé : welcome.txt');
+    }
+
+    function readFile() {
+      const data = localStorage.getItem('welcome.txt');
+      if (data) {
+        document.getElementById('content').innerText = data;
+      } else {
+        alert("Aucun fichier trouvé !");
+      }
+    }
+  </script>
+</body>
+</html>
