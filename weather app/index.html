@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #1e90ff, #87ceeb);
+            color: #fff;
+        }
+
+        #app-container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+
+        #search-container {
+            margin-bottom: 20px;
+        }
+
+        #city-input {
+            padding: 10px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            width: 200px;
+            margin-right: 10px;
+        }
+
+        #search-btn {
+            padding: 10px 15px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff7f50;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #search-btn:hover {
+            background-color: #ff4500;
+        }
+
+        #weather-display {
+            margin-top: 20px;
+        }
+
+        #weather-display p {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            #city-input {
+                width: 150px;
+            }
+
+            #weather-display p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="app-container">
+        <h1>Weather App</h1>
+        <div id="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-btn">Get Weather</button>
+        </div>
+        <div id="weather-display">
+            <p id="location">Location: --</p>
+            <p id="temperature">Temperature: --</p>
+            <p id="description">Description: --</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
